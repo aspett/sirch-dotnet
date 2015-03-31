@@ -75,7 +75,7 @@ namespace Sirch
         {
             try
             {
-                _client = new IrcClient("gaspworks.net:6999", new IrcUser("Rappelle", "Rappelle"), true);
+                _client = new IrcClient("Server:Port", new IrcUser("Nick", "Nick"), true);
                 _client.IgnoreInvalidSSL = true;
 
                 _client.ConnectionComplete += (sender, eventArgs) => Console.WriteLine("Connected");
